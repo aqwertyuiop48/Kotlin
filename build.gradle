@@ -27,5 +27,9 @@ test {
     useJUnitPlatform() // Ensure this is here if you are using JUnit 5
     testLogging {
         events "passed", "skipped", "failed"
+        exceptionFormat "full"
+        showExceptions true
+        showCauses true
+        showStackTraces true
     }
 }
