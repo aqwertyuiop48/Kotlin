@@ -2,6 +2,7 @@ package other
 
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import java.text.Normalizer
 
 class PalindromeTest {
 
