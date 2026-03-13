@@ -24,7 +24,6 @@ compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 test {
-    useJUnitPlatform() // Ensure this is here if you are using JUnit 5
     testLogging {
         events "passed", "skipped", "failed"
         exceptionFormat "full"
