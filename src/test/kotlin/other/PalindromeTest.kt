@@ -38,7 +38,7 @@ class PalindromeTest {
         val withoutAccents = "\\p{InCombiningDiacriticalMarks}+".toRegex().replace(normalized, "")
         
         // 3. Keep only alphanumeric characters and convert to lowercase
-        val cleanText = withoutAccents.replace("[^A-Za-z0-9]".toRegex(), "").lowercase()
+        val cleanText = withoutAccents.replace("[^A-Za-z0-9]".toRegex(), "").toLowerCase()
         
         // 4. Check if the cleaned string is equal to its reversed self
         return cleanText == cleanText.reversed()
